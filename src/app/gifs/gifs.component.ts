@@ -21,7 +21,6 @@ export class GifsComponent implements OnInit {
     this.dataService.getTrendingGifs();
     this.subscription = this.dataService.getGiffs().subscribe((response:any)=>{
       this.Gifs = response;
-      console.log(this.Gifs);
     });
 
 
@@ -33,8 +32,6 @@ export class GifsComponent implements OnInit {
     this.dataService.getInfoGifs(id).subscribe((reponse:any)=>{
 
       this.Gifs = reponse.data;
-      console.log(this.Gifs);
-
     });
   }
 

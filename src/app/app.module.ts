@@ -8,20 +8,26 @@ import { SearchComponent } from './search/search.component';
 import { GifsComponent } from './gifs/gifs.component';
 
 import{HttpClientModule} from '@angular/common/http';
+import { UploadComponent } from './upload/upload.component';
+import {FileUploadModule} from 'primeng/fileupload';
+import {MessageService} from "primeng/api";
+import {DataService} from "./data.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    GifsComponent
+    GifsComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FileUploadModule
   ],
-  providers: [],
+  providers: [MessageService,DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

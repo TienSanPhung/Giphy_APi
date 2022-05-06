@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  giphyApiKey:'WSTxJ3JGbZ7IGct6NBBSfAaeKf1EbKnJ'
+  giphyApiKey:'WSTxJ3JGbZ7IGct6NBBSfAaeKf1EbKnJ',
+  username:'SanPT'
+
 };
 
 /*
